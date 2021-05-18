@@ -70,14 +70,14 @@
     <div class="container">
       <div class="row" id="intro">
         <div class="col">
-          <h2>PPGs-based Voice Conversion</h2>
+          <h2>Messages</h2>
           <div>
-            <p>Phonetic PosteriorGrams (PPGs) has been successfully applied to non-parallel VC <a class="text-success" href="#1">[1]</a>.
-            The PPG is a sequence of frame-level linguistic information representation obtained from the speaker-independent automatic speech recognition system. 
-            The PPGs-based VC frameworks mainly consist of two key components: the conversion model and vocoder. 
-            The conversion model converts PPGs extracted from the source speech into acoustic features of the target speaker.
-            Then the vocoder uses these converted features to synthesize the speech waveform of the target speaker.
-            </p>
+            <p>This page shows the samples in the paper "<b>NeuralDPS: Neural Deterministic Plus Stochastic Model with Multiband Excitation for Noise-Controllable Waveform Generation</b>".
+			<p>
+			Experiments were based on <b>CMU-ARCTIC dataset</b> and <b>LJ Speech Dataset</b>. All test samples and test texts have not appeared in the training set and validation set. 
+			</p>
+			<p>
+			<b>Copy-synthesis</b> refers to waveform generation given natural acoustic features. <b>Text-to-speech</b> refers to waveform generation given acoustic features predicted from the text input, and the acoustic model we used is Tacotron2.
           </div>
         </div>
       </div>
@@ -318,7 +318,7 @@
 				  
 				   <hr>
               
-		  <h3>2: Comparison between NDPS and Some Existing Vocoders (Vocoder and Taco2+Vocoder on LJSpeech dataset)</h3>
+		  <h3>2: Comparison between NDPS and Some Existing Vocoders (Copy-synthesis and Taco2+Vocoder on LJSpeech dataset)</h3>
                   <div class="big-screen">
                     <table class="table">
                       <thead>
@@ -335,7 +335,7 @@
                       <tbody>
 						
 						<tr>
-                          <th scope="row">Sample 1  (Only vocoder)</th>
+                          <th scope="row">Sample 1  (Copy-synthesis)</th>
                           <td>
                             <audio controls>
                               <source src="./my/A1-org/lj/LJ049-0009.wav" type="audio/wav" />
@@ -371,7 +371,7 @@
 						
 						
 						<tr>
-                          <th scope="row">Sample 1  (Taco2 + vocoder)</th>
+                          <th scope="row">Sample 1  (Text-to-speech)</th>
                           <td>
                             <audio controls>
                               <source src="./my/A1-org/lj/LJ049-0009.wav" type="audio/wav" />
@@ -405,7 +405,7 @@
                         </tr>
 						
 					<tr>
-                          <th scope="row">Sample 2  (Only vocoder)</th>
+                          <th scope="row">Sample 2  (Copy-synthesis)</th>
                           <td>
                             <audio controls>
                               <source src="./my/A1-org/lj/LJ049-0011.wav" type="audio/wav" />
@@ -441,7 +441,7 @@
 						
 						
 						<tr>
-                          <th scope="row">Sample 2  (Taco2 + vocoder)</th>
+                          <th scope="row">Sample 2  (Text-to-speech)</th>
                           <td>
                             <audio controls>
                               <source src="./my/A1-org/lj/LJ049-0011.wav" type="audio/wav" />
@@ -475,7 +475,7 @@
                         </tr>
 
 					<tr>
-                          <th scope="row">Sample 3  (Only vocoder)</th>
+                          <th scope="row">Sample 3  (Copy-synthesis)</th>
                           <td>
                             <audio controls>
                               <source src="./my/A1-org/lj/LJ049-0016.wav" type="audio/wav" />
@@ -511,7 +511,7 @@
 						
 						
 						<tr>
-                          <th scope="row">Sample 3  (Taco2 + vocoder)</th>
+                          <th scope="row">Sample 3  (Text-to-speech)</th>
                           <td>
                             <audio controls>
                               <source src="./my/A1-org/lj/LJ049-0016.wav" type="audio/wav" />
