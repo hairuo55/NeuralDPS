@@ -74,7 +74,7 @@
           <div>
             <p>This page shows the samples in the paper "<b>NeuralDPS: Neural Deterministic Plus Stochastic Model with Multiband Excitation for Noise-Controllable Waveform Generation</b>".
 			<p>
-			Experiments were based on <b>CMU-ARCTIC dataset</b> and <b>LJ Speech Dataset</b>. All test samples and test texts have not appeared in the training set and validation set. 
+			Experiments were based on <b>CMU-ARCTIC dataset</b> and <b>LJ Speech dataset</b>. We also trained a multi-speaker vocoder on <b>LibriTTS dataset</b>. All test samples and test texts have not appeared in the training set and validation set. 
 			</p>
 			<p>
 			<b>Copy-synthesis</b> refers to waveform generation given natural acoustic features. <b>Text-to-speech</b> refers to waveform generation given acoustic features predicted from the text input, and the acoustic model we used is Tacotron2.
@@ -838,6 +838,153 @@
                       </tbody>
                     </table>
                   </div>
+ 
+ 
+  <h3>6: Multi-speaker NDPS-MBE vocoder (On libritts and 10 speakers are shown below)</h3>
+                  <div class="big-screen">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>spk1</th>
+                          <th>spk2</th>
+                          <th>spk3</th>
+						  <th>spk4</th>
+						  <th>spk5</th>
+						  <th>spk6</th>
+						  <th>spk7</th>
+						  <th>spk8</th>
+						  <th>spk9</th>
+						  <th>spk10</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+						
+						<tr>
+                          <th scope="row">Natural</th>
+						  
+
+						  <td>
+                            <audio controls>
+                              <source src="./my/libritts/6.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+						  <td>
+                            <audio controls>
+                              <source src="./my/libritts/8.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+						  
+						  						 <td>
+                            <audio controls>
+                              <source src="./my/libritts/9.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+						<td>
+                            <audio controls>
+                              <source src="./my/libritts/10.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+						  
+                          <td>
+                            <audio controls>
+                              <source src="./my/libritts/1.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls>
+                              <source src="./my/libritts/2.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls>
+                              <source src="./my/libritts/11.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+						  <td>
+                            <audio controls>
+                              <source src="./my/libritts/4.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls>
+                              <source src="./my/libritts/5.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+						                            <td>
+                            <audio controls>
+                              <source src="./my/libritts/7.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+
+                        </tr>
+						
+						
+						
+						<tr>
+                          <th scope="row">NDPS-MBE</th>
+						  
+
+						  <td>
+                            <audio controls>
+                              <source src="./my/libritts/6_gen.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+						  <td>
+                            <audio controls>
+                              <source src="./my/libritts/8_gen.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+						  
+						  						 <td>
+                            <audio controls>
+                              <source src="./my/libritts/9_gen.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+						<td>
+                            <audio controls>
+                              <source src="./my/libritts/10_gen.wav" type="audio/wav" />
+                            </audio>
+                         <td>
+                            <audio controls>
+                              <source src="./my/libritts/1_gen.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls>
+                              <source src="./my/libritts/2_gen.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls>
+                              <source src="./my/libritts/11_gen.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+						  <td>
+                            <audio controls>
+                              <source src="./my/libritts/4_gen.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+                          <td>
+                            <audio controls>
+                              <source src="./my/libritts/5_gen.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+
+						                            <td>
+                            <audio controls>
+                              <source src="./my/libritts/7_gen.wav" type="audio/wav" />
+                            </audio>
+                          </td>
+
+                          </td>
+                        </tr>
+						
+					
+                      </tbody>
+                    </table>
+                  </div>
+		  
  
 		  <hr>
 
